@@ -1,0 +1,30 @@
+import Link from "next/link";
+import React, { useState } from "react";
+
+type Props = {
+  name: string;
+  link: string;
+};
+
+function HeaderLink({ name, link }: Props) {
+  const [hover, setHover] = useState(false);
+  return (
+    <div className="flex flex-col w-fit cursor-pointer">
+      <Link href={link}>
+        <div
+          className=""
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+        >
+          {name}
+        </div>
+      </Link>
+      <div
+        className={`h-[3px] ${hover ? "" : "opacity-0"} transition-all 
+      ease-in-out duration-300  bg-black`}
+      ></div>
+    </div>
+  );
+}
+
+export default HeaderLink;
