@@ -11,7 +11,7 @@ function Header() {
     >
       <div className="flex justify-evenly items-center">
         <Link href="/">
-          <MenuBookIcon className='h-5 w-5 cursor-pointer'/>
+          <MenuBookIcon className="md:h-5 md:w-5 cursor-pointer w-4 h-4" />
         </Link>
         <HeaderLink name="About" link="/about" />
         <HeaderLink name="Experience" link="/experience" />

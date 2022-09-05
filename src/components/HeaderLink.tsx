@@ -9,7 +9,9 @@ type Props = {
 function HeaderLink({ name, link }: Props) {
   const [hover, setHover] = useState(false);
   return (
-    <div className="flex flex-col w-fit cursor-pointer">
+    <div className="flex flex-col w-fit cursor-pointer 
+    md:text-lg text-[14px]
+    md:border-none border-b-[1px] border-black">
       <Link href={link}>
         <div
           className=""

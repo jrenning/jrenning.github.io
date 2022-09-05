@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import DownloadIcon from "@mui/icons-material/Download";
 
+
 function Welcome() {
   return (
     <div>
@@ -10,21 +11,14 @@ function Welcome() {
         and <span className="text-primary_color">learn</span> new skills
       </div>
       <div className="flex justify-evenly mt-12 ">
-        <Link href="/">
-          <button
-            className="bg-gray-500 p-4 rounded-lg
-      font-semibold text-gray-100 hover:bg-gray-200 shadow-xl hover:text-black"
-          >
-            Learn More About Me
-          </button>
+        <Link href="/about">
+          <button className="button-standard">Learn More About Me</button>
         </Link>
-        <button
-          className='bg-gray-500 p-4 rounded-lg
-      font-semibold text-gray-100 hover:bg-gray-200 shadow-xl hover:text-black'
-        >
-          Download Resume
-          <DownloadIcon />
-
+        <button className="button-standard">
+          <a href="/pdfs/Resume-CF.pdf" download>
+            Download Resume
+            <DownloadIcon />
+          </a>
         </button>
       </div>
     </div>
