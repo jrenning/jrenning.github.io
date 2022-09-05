@@ -1,9 +1,18 @@
 import React from 'react'
+import Skills from '../components/experience/Skills'
+import Timeline from '../components/experience/Timeline'
+import PageHeader from '../components/shared/PageHeader'
 
-function experience() {
+function ExperiencePage() {
   return (
-    <div>experience</div>
+    <div>
+        <PageHeader name="My Experience" />
+
+        <Timeline />
+        <PageHeader name="Skills" />
+        <Skills />
+    </div>
   )
 }
 
-export default experience
+export default ExperiencePage

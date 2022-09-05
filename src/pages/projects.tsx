@@ -5,6 +5,7 @@ import PageHeader from "../components/shared/PageHeader";
 const projects = [
   {
     title: "Area Depreviation",
+    image: "",
     link: "https://public.tableau.com/app/profile/jack.renning/viz/AreaDeprivationIndexinUSbyCounty/Sheet1",
     description: `This project uses the public data for the Area Depreviation Index to
             show a map of the United States counties colored according to the
@@ -28,15 +29,14 @@ function ProjectPage() {
     <div>
       <PageHeader name="Projects" />
       <div
-        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1
-      "
+        className="grid grid-cols-1 gap-12 lg:grid-cols-3 md:grid-cols-2 "
       >
         {projects.map((project) => (
           <ProjectCard
             title={project.title}
             description={project.description}
             link={project.link}
-            image={project.image ? project.image : ""}
+            image={"image" in project ? project.image : ""}
             key={project.title}
           ></ProjectCard>
         ))}
