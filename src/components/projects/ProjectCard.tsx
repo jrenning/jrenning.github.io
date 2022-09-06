@@ -12,21 +12,21 @@ type Props = {
 
 function ProjectCard({children, title, image, link, description}: Props) {
   return (
-    <div className="shadow-xl p-8 mx-4 rounded-md bg-tertiary_color">
-      <h1 className="text-center font-bold text-2xl mb-8">{title}</h1>
+    <div className="p-8 mx-4 rounded-md shadow-xl bg-tertiary_color">
+      <h1 className="mb-8 text-2xl font-bold text-center">{title}</h1>
 
       {image && <Image src={image} layout="responsive" width={600} height={600} />}
-      <p>{description}</p>
+      <p className='indent-10'>{description}</p>
 
       {/* Extra stuff  */}
       {children}
-      <Link href={link ? link : ""}>
-        <div className="flex justify-center items-center mt-12">
+      <a href={link ? link : ""} target="_blank">
+        <div className="flex items-center justify-center mt-12">
           <button className="button-standard-primary">
             See the Code
           </button>
         </div>
-      </Link>
+      </a>
     </div>
   );
 }

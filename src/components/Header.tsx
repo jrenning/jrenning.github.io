@@ -1,17 +1,16 @@
 import React from 'react'
 import HeaderLink from './HeaderLink'
-import MenuBookIcon from "@mui/icons-material/MenuBook";
+import HomeIcon from "@mui/icons-material/Home";
 import Link from 'next/link';
 
 function Header() {
   return (
     <div
-      className="p-4 bg-primary_color
-    shadow-md"
+      className="p-4 shadow-md bg-primary_color"
     >
-      <div className="flex justify-evenly items-center">
+      <div className="flex items-center justify-evenly">
         <Link href="/">
-          <MenuBookIcon className="md:h-5 md:w-5 cursor-pointer w-4 h-4" />
+          <HomeIcon className="cursor-pointer w-7 h-7 md:h-7 md:w-7" />
         </Link>
         <HeaderLink name="About" link="/about" />
         <HeaderLink name="Experience" link="/experience" />

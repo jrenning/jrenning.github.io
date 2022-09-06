@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { ReactComponentElement, useState } from "react";
 
 type Props = {
@@ -8,18 +9,20 @@ type Props = {
 function FooterLink({ Icon, link }: Props) {
   const [hover, setHover] = useState(false);
   return (
-    <div className="flex flex-col w-fit cursor-pointer">
-      <Icon
-        href={link}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
-      </Icon>
-      <div
-        className={`h-[3px] ${hover ? "" : "opacity-0"} transition-all 
+    // target blank to open link on new page
+    <a href={link} target="_blank">
+      <div className="flex flex-col cursor-pointer w-fit">
+        <Icon
+          href={link}
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+        ></Icon>
+        <div
+          className={`h-[3px] ${hover ? "" : "opacity-0"} transition-all 
       ease-in-out duration-300  bg-black`}
-      ></div>
-    </div>
+        ></div>
+      </div>
+    </a>
   );
 }
 

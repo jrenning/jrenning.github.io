@@ -4,17 +4,17 @@ import PageHeader from "../components/shared/PageHeader";
 
 const projects = [
   {
-    title: "Area Depreviation",
+    title: "Iowa Enrollment Analysis",
     image: "",
-    link: "https://public.tableau.com/app/profile/jack.renning/viz/AreaDeprivationIndexinUSbyCounty/Sheet1",
-    description: `This project uses the public data for the Area Depreviation Index to
-            show a map of the United States counties colored according to the
-            score.`,
+    link: "https://github.com/jrenning/Iowa_University_Enrollment_Analysis",
+    description: `A project that looks at the enrollment data for three 
+    public Iowa universities and analyzes its changes in 2020 and 2021.`,
   },
   {
-    title: "Test project",
-    link: "",
-    description: "this is a test description that should not be here",
+    title: "New York Times Popular Keywords",
+    link: "https://github.com/jrenning/NYT_Popular_Keywords",
+    description: `A project that uses the NYT API to scrape the most common keywords
+			from the top 25 most popular NYT articles of the current day and display the results in a graphical fashion`,
   },
   {
     title: "Test project 2",
@@ -28,9 +28,7 @@ function ProjectPage() {
   return (
     <div>
       <PageHeader name="Projects" />
-      <div
-        className="grid grid-cols-1 gap-12 lg:grid-cols-3 md:grid-cols-2 "
-      >
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 md:grid-cols-2 ">
         {projects.map((project) => (
           <ProjectCard
             title={project.title}

@@ -11,7 +11,7 @@ function HeaderLink({ name, link }: Props) {
   return (
     <div className="flex flex-col w-fit cursor-pointer 
     md:text-lg text-[14px]
-    md:border-none border-b-[1px] border-black">
+    sm:border-none border-b-[1px]  border-black">
       <Link href={link}>
         <div
           className=""
