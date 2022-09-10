@@ -16,6 +16,8 @@ a {
   box-sizing: border-box;
 }
 
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -43,3 +45,4 @@ a {
     @apply lg:text-2xl text-xl font-semibold py-2
   }
 }
+

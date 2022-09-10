@@ -19,13 +19,13 @@ function ContactPage() {
           <div className="flex flex-col">
             <div className="flex flex-col">
               {fields.map((field) => (
-                <>
+                <React.Fragment key={field}>
                   <label className="standard-label">{field}</label>
                   <input
                     {...register(field)}
                     className="h-8 p-2 rounded-md lg:h-12"
                   ></input>
-                </>
+                </React.Fragment>
               ))}
             </div>
           </div>
