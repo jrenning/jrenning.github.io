@@ -10,7 +10,7 @@ function FooterLink({ Icon, link }: Props) {
   const [hover, setHover] = useState(false);
   return (
     // target blank to open link on new page
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noreferrer">
       <div className="flex flex-col cursor-pointer w-fit">
         <Icon
           href={link}

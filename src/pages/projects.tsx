@@ -17,6 +17,7 @@ function ProjectPage() {
             link={project.link}
             skills={project.skills}
             image={"image" in project ? project.image : ""}
+            alt={"alt" in project ? project.alt : ""}
             key={project.title}
           ></ProjectCard>
         ))}

@@ -9,7 +9,7 @@ type Props = {
 function IconSet({name, link}: Props) {
   return (
     <div className="flex flex-col">
-      <Image src={link} width={40} height={40} />
+      <Image src={link} width={40} height={40} alt="" />
       <h2 className='text-center'>{name}</h2>
     </div>
   );

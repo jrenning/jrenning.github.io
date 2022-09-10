@@ -58,13 +58,13 @@ function Skills() {
       <Subheader name="Programming Languages" />
       <div className="grid grid-cols-3 gap-4 md:grid-cols-5">
         {langauges.map((langauge) => (
-          <IconSet name={langauge.name} link={langauge.link} />
+          <IconSet name={langauge.name} link={langauge.link} key={langauge.name} />
         ))}
       </div>
       <Subheader name="Technologies and Tools" />
       <div className="grid grid-cols-3 gap-4 md:grid-cols-5">
         {techs.map((tech) => (
-          <IconSet name={tech.name} link={tech.link} />
+          <IconSet name={tech.name} link={tech.link} key={tech.name} />
         ))}
       </div>
       <Subheader name="Soft Skills" />

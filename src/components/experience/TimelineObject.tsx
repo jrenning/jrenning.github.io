@@ -29,7 +29,7 @@ function TimelineObject({job_name, start_date, end_date, location, bullets}: Pro
         <div>
           <ul className="ml-12">
             {bullets.map((bullet) => (
-              <li className="list-disc">{bullet}</li>
+              <li className="list-disc" key={bullet}>{bullet}</li>
             ))}
           </ul>
         </div>

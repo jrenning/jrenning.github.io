@@ -1,14 +1,19 @@
-import React from 'react'
-import Card from '../components/shared/Card';
-import PageHeader from '../components/shared/PageHeader'
+import React from "react";
+import Card from "../components/shared/Card";
+import PageHeader from "../components/shared/PageHeader";
 
 function ABoutPage() {
   return (
     <div>
       <PageHeader name="About Me" />
       <Card margin_y={12}>
-        <div className='flex justify-center w-full mb-4 bg-black'>
-          <img className='object-fill' src="/images/uiowa-full.png" width={300} />
+        <div className="flex justify-center w-full mb-4 bg-black">
+          <img
+            className="object-fill"
+            alt="University of Iowa logo"
+            src="/images/uiowa-full.png"
+            width={300}
+          />
         </div>
         <p className="indent-10">
           My name is Jack Renning. I am a student at the University of Iowa
@@ -30,4 +35,4 @@ function ABoutPage() {
   );
 }
 
-export default ABoutPage
+export default ABoutPage;

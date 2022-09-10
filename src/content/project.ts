@@ -2,6 +2,7 @@ export const projects = [
   {
     title: "Iowa Enrollment Analysis",
     image: "/images/school.jpg",
+    alt: "An image of bookshelves in a library",
     link: "https://github.com/jrenning/Iowa_University_Enrollment_Analysis",
     skills: ["Python", "Data Analysis", "Pandas"],
     description: `A project that looks at the enrollment data for three 
@@ -11,6 +12,7 @@ export const projects = [
     title: "New York Times Popular Keywords",
     link: "https://github.com/jrenning/NYT_Popular_Keywords",
     image: "/images/newspaper.jpg",
+    alt: "A picture of a newspaper",
     skills: ["Python", "API", "Data Analysis"],
     description: `A project that uses the NYT API to scrape the most common keywords
 			from the top 25 most popular NYT articles of the current day and display the results in a graphical fashion`,
@@ -19,6 +21,7 @@ export const projects = [
     title: "Project Builder",
     link: "https://github.com/jrenning/Project_Builder",
     image: "/images/coding.jpg",
+    alt: "A picture of code on a laptop",
     skills: ["Tauri", "Javascript", "Rust"],
     description:
       `Desktop application made using Tauri. Enables the user to create basic projects in Javascript, Python, and Rust with
