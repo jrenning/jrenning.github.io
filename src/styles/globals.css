@@ -34,9 +34,9 @@ a {
 
 @layer components {
   .button-standard {
-    @apply bg-secondary_color p-4 rounded-lg
+    @apply bg-secondary_color md:p-4 rounded-lg
       font-semibold text-gray-100 hover:bg-gray-200 shadow-xl hover:text-black
-      text-sm md:text-lg
+      text-sm md:text-lg p-3
   }
   .button-standard-primary {
     @apply rounded-md bg-primary_color px-4 py-2 shadow-sm hover:opacity-80

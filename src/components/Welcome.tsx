@@ -6,16 +6,16 @@ import DownloadIcon from "@mui/icons-material/Download";
 function Welcome() {
   return (
     <div>
-      <div className=" text-center font-semibold text-lg mt-10">
+      <div className="mt-10 text-lg font-semibold text-center ">
         Looking to <span className="text-primary_color">build</span> new things
         and <span className="text-primary_color">learn</span> new skills
       </div>
-      <div className="flex justify-evenly mt-12 ">
+      <div className="flex mt-12 justify-evenly ">
         <Link href="/about">
           <button className="button-standard">Learn More About Me</button>
         </Link>
         <button className="button-standard">
-          <a href="/pdfs/Resume-CF.pdf" download>
+          <a href="/pdfs/Resume-F22-2.pdf" download>
             Download Resume
             <DownloadIcon />
           </a>
