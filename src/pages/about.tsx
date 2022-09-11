@@ -15,21 +15,23 @@ function ABoutPage() {
             width={300}
           />
         </div>
-        <p className="indent-10">
-          My name is Jack Renning. I am a student at the University of Iowa
-          studying Chemical Engineering with a focus in Data Science. I made
-          this portfolio as a showcase of some of my work experience and
-          projects.
-        </p>
-        <p>Some things outside of classes that I am involved in include:</p>
-        <li>The American Institute of Chemical Engineers</li>
-        <li>TA for CBE:2110 Computational Tools for Chemical Engineers</li>
-        <li>Running Club at the University of Iowa</li>
-        <p className="indent-10">
-          Outside school I enjoy running outside, hanging out with friends,
-          hiking, cooking, reading, playing with my dog, and fiddling with
-          whatever catches my interest.
-        </p>
+        <div className="space-y-4 dark:text-black">
+          <p className="">
+            My name is Jack Renning. I am a student at the University of Iowa
+            studying Chemical Engineering with a focus in Data Science. I made
+            this portfolio as a showcase of some of my work experience and
+            projects.
+          </p>
+          <p>Some things outside of classes that I am involved in include:</p>
+          <li>The American Institute of Chemical Engineers</li>
+          <li>TA for CBE:2110 Computational Tools for Chemical Engineers</li>
+          <li>Running Club at the University of Iowa</li>
+          <p className="">
+            Outside school I enjoy running outside, hanging out with friends,
+            hiking, cooking, reading, playing with my dog, and fiddling with
+            whatever catches my interest.
+          </p>
+        </div>
       </Card>
     </div>
   );

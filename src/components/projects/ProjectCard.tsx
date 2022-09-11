@@ -23,8 +23,8 @@ function ProjectCard({
 }: Props) {
   return (
     <div className="p-8 mx-4 rounded-md shadow-xl bg-tertiary_color">
-      <h1 className="mb-2 text-2xl font-bold text-center m">{title}</h1>
-      <div className="flex items-center justify-center mb-4">
+      <h1 className="mb-2 text-2xl font-bold text-center m dark:text-secondary_color">{title}</h1>
+      <div className="flex items-center justify-center mb-4 dark:text-secondary_color">
         {skills.map((skill, index: number) =>
           index == 0 ? (
             <i key={index}>{`${skill} `}</i>
@@ -45,7 +45,7 @@ function ProjectCard({
           />
         )}
       </div>
-      <p className="">{description}</p>
+      <p className="dark:text-secondary_color">{description}</p>
 
       {/* Extra stuff  */}
       {children}

@@ -12,7 +12,7 @@ function ContactPage() {
     <div>
       <PageHeader name="Contact" />
       <form
-        className="grid items-center p-12 mx-12 mt-8 shadow-md bg-tertiary_color justify-evenly"
+        className="grid items-center p-12 mx-12 mt-8 shadow-md bg-tertiary_color justify-evenly dark:text-white"
         onSubmit={handleSubmit(contactSubmit)}
       >
         <div className="grid grid-cols-1 gap-8 font-semibold text-black md:grid-cols-2">
@@ -23,7 +23,7 @@ function ContactPage() {
                   <label className="standard-label">{field}</label>
                   <input
                     {...register(field)}
-                    className="h-8 p-2 rounded-md lg:h-12"
+                    className="h-8 p-2 rounded-md lg:h-12 dark:text-white"
                   ></input>
                 </React.Fragment>
               ))}
@@ -32,7 +32,7 @@ function ContactPage() {
           <div className="flex flex-col">
             <label className="standard-label">Message</label>
             <textarea
-              className={`lg:flex-1 2xl:w-[40rem] xl:w-[30rem] lg:w-[20rem] rounded-md p-2`}
+              className={`lg:flex-1 2xl:w-[40rem] xl:w-[30rem] lg:w-[20rem] rounded-md p-2 dark:text-white`}
             ></textarea>
             <div className="flex justify-center">
               <button type="submit" className="mt-4 button-standard-primary">
