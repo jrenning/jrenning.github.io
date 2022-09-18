@@ -7,17 +7,16 @@ import Welcome from '../components/Welcome'
 
 const Home: NextPage = () => {
   return (
-    <div className='flex flex-col global dark:bg-[#121212]'>
+    <div className="flex flex-col global dark:bg-[#121212]">
       <Head>
-        <title>Jack Renning&apos's Portfolio</title>
+        <title>Jack Renning&#39;s Portfolio</title>
         <meta name="description" content="my portfolio" />
       </Head>
       <Greeting />
-      <Welcome/>
+      <Welcome />
       <Footer />
-
     </div>
-  )
+  );
 }
 
 export default Home
