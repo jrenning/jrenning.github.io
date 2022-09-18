@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className='flex flex-col global dark:bg-[#121212]'>
       <Head>
-        <title>Jack Renning's Portfolio</title>
+        <title>Jack Renning&apos's Portfolio</title>
         <meta name="description" content="my portfolio" />
       </Head>
       <Greeting />
