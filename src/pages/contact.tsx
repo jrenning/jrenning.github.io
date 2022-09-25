@@ -14,7 +14,8 @@ function ContactPage() {
     <div>
       <PageHeader name="Contact" />
       <form
-        className="grid items-center p-12 mx-12 mt-8 shadow-md bg-tertiary_color justify-evenly dark:text-white"
+        className="grid items-center p-12 mx-12 mt-8 shadow-md bg-tertiary_color justify-evenly dark:text-white
+        rounded-md"
         onSubmit={handleSubmit(contactSubmit)}
         method="post"
         action="https://getform.io/f/57c98ca4-7169-452f-a212-ea13605437b6"

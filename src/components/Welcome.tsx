@@ -15,7 +15,12 @@ function Welcome() {
           <button className="button-standard">Learn More About Me</button>
         </Link>
         <button className="button-standard">
-          <a href="/pdfs/Resume-F22-2.pdf" download>
+          <a
+            href="/pdfs/Resume-F22-2.pdf"
+            target="_blank"
+            rel="noreferrer"
+            download
+          >
             Download Resume
             <DownloadIcon />
           </a>
