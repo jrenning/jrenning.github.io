@@ -6,7 +6,7 @@ import Link from 'next/link';
 function Header() {
   return (
     <div
-      className="p-4 shadow-md bg-primary_color sticky top-0"
+      className="p-4 shadow-md bg-primary_color sticky top-0 z-50"
     >
       <div className="flex items-center justify-evenly">
         <Link href="/">
