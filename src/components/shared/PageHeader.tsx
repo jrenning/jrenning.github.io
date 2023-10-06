@@ -6,11 +6,7 @@ type Props = {
 
 function PageHeader({ name }: Props) {
   return (
-    <div
-      className="text-4xl 
-    flex justify-center
-     items-center font-semibold text-secondary_color my-8"
-    >
+    <div className="flex items-center justify-center text-4xl font-semibold mb-4 dark:text-primary_color_dark text-secondary_color animate-fade_in">
       {name}
     </div>
   );

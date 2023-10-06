@@ -11,7 +11,7 @@ function ContactPage() {
 
   };
   return (
-    <div>
+    <div className="dark:bg-dark_background h-screen">
       <PageHeader name="Contact" />
       <form
         className="grid items-center p-12 mx-12 mt-8 shadow-md bg-tertiary_color justify-evenly dark:text-white

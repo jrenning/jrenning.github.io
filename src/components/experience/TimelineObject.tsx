@@ -12,7 +12,7 @@ type Props = {
 
 function TimelineObject({job_name, start_date, end_date, location, bullets}: Props) {
   return (
-    <div className="flex flex-col space-y-2">
+    <div className="flex flex-col space-y-2 mx-2 dark:text-slate-50">
       <div className="flex space-x-4">
         <ArrowForwardIosIcon className="w-6 h-6" />
         <div className='flex-col lg:flex'>

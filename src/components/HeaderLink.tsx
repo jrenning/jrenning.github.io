@@ -9,12 +9,14 @@ type Props = {
 function HeaderLink({ name, link }: Props) {
   const [hover, setHover] = useState(false);
   return (
-    <div className="flex flex-col w-fit cursor-pointer 
+    <div
+      className="flex flex-col w-fit cursor-pointer 
     md:text-lg text-[14px]
-    sm:border-none border-b-[1px]  border-black">
-      <Link href={link}>
+    sm:border-none border-b-[1px]  border-black"
+    >
+      <Link href={link} scroll={true}>
         <div
-          className=""
+          className="dark:text-white"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >
@@ -23,7 +25,7 @@ function HeaderLink({ name, link }: Props) {
       </Link>
       <div
         className={`h-[3px] ${hover ? "" : "opacity-0"} transition-all 
-      ease-in-out duration-300  bg-black`}
+      ease-in-out duration-300   bg-black`}
       ></div>
     </div>
   );

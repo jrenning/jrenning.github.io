@@ -5,7 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer() {
   return (
-    <div className="absolute bottom-0 w-screen p-4 shadow-md bg-primary_color">
+    <div className="absolute dark:bg-primary_color_dark bottom-0 w-screen p-4 shadow-md bg-primary_color">
       <div className="flex items-center justify-evenly">
         <FooterLink Icon={GitHubIcon} link="https://github.com/jrenning" />
         <FooterLink

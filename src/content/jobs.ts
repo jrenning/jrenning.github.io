@@ -1,4 +1,12 @@
-export const jobs = [
+export type Job = {
+  job_name: string,
+  start_date: string,
+  end_date: string,
+  location: string,
+  bullets: string[]
+}
+
+export const jobs: Job[] = [
   {
     job_name: "Lead Engineering Tutor",
     start_date: "August 2022",
@@ -18,6 +26,17 @@ export const jobs = [
     bullets: [
       "Lead weekly group office hours to help students better understand the course material and complete their assignments",
       "Facilitate the grading of projects and homework assignments for over 40 students ",
+    ],
+  },
+  {
+    job_name: "Performance Engineering Intern",
+    start_date: "May 2023",
+    end_date: "August_2023",
+    location: "MidAmerican Energy Company, Des Moines, IA",
+    bullets: [
+      "Built a dataset correlating real-time energy market prices with local environmental factors across various wind farms. Created meaningful visualizations to highlight statistical significance, aiding data-driven insights.",
+      "Led the establishment of a centralized 'Single Source of Truth' for wind operations, consolidating data from various departments and amassing over 17,000 critical data points.",
+      "Cross-referenced daily reports and outage data to pinpoint recurring over 24-hour outages, categorizing trends by manufacturer, location, and wind turbine model for targeted improvement efforts.",
     ],
   },
   {

@@ -4,7 +4,7 @@ import PageHeader from "../components/shared/PageHeader";
 
 function ABoutPage() {
   return (
-    <div>
+    <div className="dark:bg-dark_background h-screen mt-0">
       <PageHeader name="About Me" />
       <Card margin_y={12}>
         <div className="flex justify-center w-full mb-4 bg-black">

@@ -11,11 +11,12 @@ function FooterLink({ Icon, link }: Props) {
   return (
     // target blank to open link on new page
     <a href={link} target="_blank" rel="noreferrer">
-      <div className="flex flex-col cursor-pointer w-fit">
+      <div className="flex flex-col cursor-pointer w-fit dark:text-white">
         <Icon
           href={link}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
+
         ></Icon>
         <div
           className={`h-[3px] ${hover ? "" : "opacity-0"} transition-all 

@@ -5,7 +5,7 @@ import PageHeader from '../components/shared/PageHeader'
 
 function ExperiencePage() {
   return (
-    <div>
+    <div className='dark:bg-dark_background'>
         <PageHeader name="My Experience" />
 
         <Timeline />

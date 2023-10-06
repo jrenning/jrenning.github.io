@@ -11,7 +11,7 @@ function SoftIcon({name, Icon}: Props) {
       <Icon className="w-[40px] h-[40px]">
         
       </Icon>
-      <h2 className="text-center">{name}</h2>
+      <h2 className="text-center dark:text-slate-50">{name}</h2>
     </div>
   );
 }

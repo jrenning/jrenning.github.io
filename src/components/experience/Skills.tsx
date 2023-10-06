@@ -73,7 +73,7 @@ function Skills() {
       </div>
       <Subheader name="Soft Skills" />
       <div className="grid grid-cols-3 gap-4 md:grid-cols-5">
-        <SoftIcon name="Commincation" Icon={ForumIcon} />
+        <SoftIcon name="Communication" Icon={ForumIcon} />
         <SoftIcon name="Teamwork" Icon={GroupsIcon} />
         <SoftIcon name="Detail Oriented" Icon={ImageSearchIcon} />
         <SoftIcon name="Organization" Icon={FolderCopyIcon} />
