@@ -5,7 +5,7 @@ import React from "react";
 type Props = {
   children?: any;
   title: string;
-  link: string;
+  link?: string;
   skills: string[];
   image?: string;
   alt?: string;
@@ -73,11 +73,13 @@ function ProjectCard({
 
       {/* Extra stuff  */}
       {children}
-      <a href={link ? link : ""} target="_blank" rel="noreferrer">
-        <div className="flex items-center justify-center mt-12">
-          <button className="button-standard-primary">See More</button>
-        </div>
-      </a>
+      {link && (
+        <a href={link ? link : ""} target="_blank" rel="noreferrer">
+          <div className="flex items-center justify-center mt-12">
+            <button className="button-standard-primary">See More</button>
+          </div>
+        </a>
+      )}
     </div>
   );
 }

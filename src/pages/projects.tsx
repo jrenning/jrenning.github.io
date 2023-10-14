@@ -12,7 +12,7 @@ function ProjectPage() {
     (project) => project.type == "Engineering"
   );
   return (
-    <div className="dark:bg-dark_background">
+    <div className="dark:bg-dark_background min-h-full">
       <PageHeader name="Projects" />
       <div className="flex flex-row space-x-6 mb-8 justify-center items-center text-lg font-semibold">
         <button className="rounded-md shadow-md px-2 py-1 bg-primary_color"
