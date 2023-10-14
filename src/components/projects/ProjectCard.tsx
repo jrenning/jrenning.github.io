@@ -54,7 +54,7 @@ function ProjectCard({
       </h1>
       <div className="flex space-x-8 items-center justify-center mb-4 dark:text-secondary_color">
         {skills.map((skill, index: number) => (
-          <Tag name={skill} />
+          <Tag name={skill} key={index} />
         ))}
       </div>
       {/* <div className="p-1 mb-4 border-2 border-black border-solid bg-primary_color">
